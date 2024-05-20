@@ -86,3 +86,114 @@ export const brands = [
     imgUrl: Brand_9,
   },
 ];
+
+export const footerLinks = [
+  {
+    title: "Product",
+    links: [
+      {
+        label: "Connections",
+        href: "connections",
+      },
+      {
+        label: "Protocols",
+        href: "protocols",
+      },
+      {
+        label: "Personals",
+        href: "personals",
+      },
+      {
+        label: "Integrations",
+        href: "integrations",
+      },
+      {
+        label: "Catalog",
+        href: "catalog",
+      },
+      {
+        label: "Pricing",
+        href: "pricing",
+      },
+      {
+        label: "Security",
+        href: "security",
+      },
+      {
+        label: "GDPR",
+        href: "gdpr",
+      },
+    ],
+  },
+  {
+    title: "For Developers",
+    links: [
+      {
+        label: "Docs",
+        href: "docs",
+      },
+      {
+        label: "API",
+        href: "api",
+      },
+      {
+        label: "Open Source",
+        href: "open-source",
+      },
+      {
+        label: "Engineering Team",
+        href: "engineering",
+      },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      {
+        label: "Careers",
+        href: "careers",
+      },
+      {
+        label: "Blogs",
+        href: "blogs",
+      },
+      {
+        label: "Press",
+        href: "press",
+      },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      {
+        label: "Help Center",
+        href: "help",
+      },
+      {
+        label: "Contact Us",
+        href: "contact",
+      },
+      {
+        label: "Security",
+        href: "security",
+      },
+      {
+        label: "Bulletins",
+        href: "bulletins",
+      },
+      {
+        label: "Documentation",
+        href: "documentation",
+      },
+      {
+        label: "Partner",
+        href: "partner",
+      },
+      {
+        label: "Portal",
+        href: "portal",
+      },
+    ],
+  },
+];

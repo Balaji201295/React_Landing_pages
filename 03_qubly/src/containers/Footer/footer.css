@@ -1,0 +1,108 @@
+.qubly__footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #fbfcff;
+}
+.qubly__footer h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+/* content */
+.qubly__footer-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 210px;
+}
+.qubly__footer-content p,
+.qubly__footer-links li {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  max-width: 210px;
+  padding: 1rem 0 2rem 0;
+  color: var(--color-dark);
+}
+.qubly__footer-content_icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.qubly__footer-content_icons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* links */
+.qubly__footer-links {
+  width: 100%;
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.qubly__footer-links_item {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  min-width: 120px;
+}
+.qubly__footer-links li {
+  padding: 0.5rem 0 0 0;
+}
+
+/* form */
+.qubly__footer-input {
+  flex: 1;
+}
+.qubly__footer-input form {
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.05));
+}
+.qubly__footer-input input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  min-height: 40px;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--color-grey);
+}
+.qubly__footer-input button {
+  background: var(--color-white);
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  min-height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .qubly__footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .qubly__footer-links_item {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .qubly__footer-content p,
+  .qubly__footer-links li {
+    max-width: 100%;
+  }
+}

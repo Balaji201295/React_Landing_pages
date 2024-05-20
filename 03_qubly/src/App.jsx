@@ -10,6 +10,7 @@ import {
   WhyQubly,
 } from "./containers";
 import "./App.css";
+import { BackToTop } from "./components";
 const App = () => (
   <main>
     <div className="app__bg">
@@ -22,6 +23,7 @@ const App = () => (
     <Testimonial />
     <Companies />
     <Footer />
+    <BackToTop />
   </main>
 );
 export default App;
