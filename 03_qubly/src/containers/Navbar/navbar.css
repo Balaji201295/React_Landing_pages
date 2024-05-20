@@ -1,0 +1,110 @@
+.qubly__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.qubly__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+.qubly__navbar-links li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-black);
+  text-transform: capitalize;
+}
+.qubly__navbar-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 2rem;
+}
+.qubly__navbar-btn button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-purple);
+  padding: 0.75rem 1.5rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-purple);
+  border-radius: 24px;
+  transition: var(--transitionAll);
+}
+.qubly__navbar-btn button:hover {
+  color: var(--color-white);
+  background: var(--color-purple);
+}
+.qubly__navbar-menu {
+  display: none;
+  position: relative;
+  margin-left: 1rem;
+}
+.qubly__navbar-menu svg {
+  cursor: pointer;
+}
+.qubly__navbar-menu_container {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+  background: var(--color-purple);
+  padding: 2rem;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.qubly__navbar-menu_container-links li {
+  margin: 1rem 0;
+  list-style: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-white);
+}
+.qubly__navbar-menu_btn {
+  display: none;
+}
+.qubly__navbar-menu_btn button {
+  background: var(--color-white);
+  color: var(--color-purple);
+  padding: 0.75rem 1rem;
+  border-radius: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .qubly__navbar-links {
+    display: none;
+  }
+  .qubly__navbar-menu {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .qubly__navbar {
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .qubly__navbar {
+    padding: 2rem;
+  }
+  .qubly__navbar-btn {
+    display: none;
+  }
+  .qubly__navbar-menu_container {
+    top: 20px;
+  }
+  .qubly__navbar-menu_btn {
+    display: block;
+  }
+}
