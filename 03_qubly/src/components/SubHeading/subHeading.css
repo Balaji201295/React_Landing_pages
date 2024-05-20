@@ -1,0 +1,18 @@
+.qubly__subheading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-blush);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+.qubly__subheading a {
+  text-decoration: underline;
+}
+.qubly__subheading p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-purple);
+}

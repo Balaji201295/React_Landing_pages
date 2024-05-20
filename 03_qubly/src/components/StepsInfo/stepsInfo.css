@@ -1,0 +1,29 @@
+.qubly__steps {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.qubly__steps-item {
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  min-width: 300px;
+  max-width: 300px;
+  gap: 1rem;
+}
+.qubly__steps-item img {
+  width: 40px;
+  height: 40px;
+}
+.qubly__steps-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+@media screen and (max-width: 575px) {
+  .qubly__steps-item {
+    min-width: 100%;
+  }
+}

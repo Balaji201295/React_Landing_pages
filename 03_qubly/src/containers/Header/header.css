@@ -1,0 +1,50 @@
+.qubly__header .app__wrapper_info {
+  gap: 1.5rem;
+}
+.qubly__header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+}
+.qubly__header_btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.qubly__header_btn button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  min-width: 120px;
+  text-align: center;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  border-radius: 24px;
+  transition: var(--transitionAll);
+}
+.qubly__header_btn button:hover {
+  color: var(--color-purple);
+  background: var(--color-white);
+}
+.qubly__header_btn button:last-child {
+  background-color: var(--color-white);
+  color: var(--color-purple);
+}
+.qubly__header_btn button:last-child:hover {
+  color: var(--color-white);
+  background: var(--color-purple);
+}
+
+@media screen and (max-width: 600px) {
+  .qubly__header h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .qubly__header_btn {
+    flex-direction: column;
+  }
+}
