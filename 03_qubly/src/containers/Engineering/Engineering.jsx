@@ -5,7 +5,7 @@ import "./engineering.css";
 const Engineering = () => (
   <article
     className="qubly__product app__wrapper section__padding"
-    id="product"
+    id="engineering"
   >
     <div className="app__wrapper_info" style={{ gap: "1.5rem" }}>
       <SubHeading icon={Compass} text="For Engineering Teams" />

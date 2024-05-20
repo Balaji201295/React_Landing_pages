@@ -1,0 +1,38 @@
+.qubly__testimonial {
+  width: 100%;
+  flex-direction: column;
+  background: linear-gradient(
+    176deg,
+    rgba(249, 240, 255, 0.5) 25.81%,
+    rgba(226, 241, 255, 0.5) 96.38%
+  );
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+.qubly__testimonial-profile {
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  border-bottom: 2px solid #dec9fa;
+}
+.qubly__testimonial-profile p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--color-dark);
+  margin-top: 2rem;
+}
+.qubly__testimonial-profile h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-black);
+  padding-bottom: 2rem;
+}
+.qubly__testimonial-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 2rem 0;
+}

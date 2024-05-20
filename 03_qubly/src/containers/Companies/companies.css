@@ -1,0 +1,101 @@
+.qubly__company {
+  gap: 3rem;
+}
+.qubly__company-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.qubly__company-content p {
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  background: var(--color-white);
+  position: relative;
+}
+.qubly__company-content_dash {
+  width: 100%;
+  height: 2px;
+  background: #d6d6d6;
+  margin-top: -45px;
+}
+.qubly__company-content_brands {
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+.qubly__company-contact {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+.contact__bg {
+  position: absolute;
+  bottom: -1.5rem;
+  z-index: -1;
+  width: 110%;
+  height: 100%;
+  background-color: #f9f0ff;
+  border-radius: 5px;
+}
+.qubly__company-contact_details {
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 2rem 2.5rem;
+  border-radius: 8px;
+  box-shadow: 4px 4px 12px 0px rgba(137, 137, 162, 0.12);
+}
+.qubly__company-contact_details button {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-white);
+  text-align: center;
+  background: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  border-radius: 8px;
+  padding: 0.75rem 0;
+  transition: var(--transitionAll);
+}
+.qubly__company-contact_details button:hover {
+  color: var(--color-purple);
+  background-color: var(--color-white);
+}
+.qubly__company-contact_details form {
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+.qubly__company-contact_details form input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-grey);
+  padding: 1rem 0 1rem 1rem;
+  text-align: left;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+.form__dash {
+  width: 100%;
+  height: 1px;
+  background: var(--color-grey);
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .qubly__company {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .qubly__company-contact_details {
+    padding: 1rem;
+  }
+}
