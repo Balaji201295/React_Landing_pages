@@ -29,37 +29,38 @@ import {
 
 export const navItems = [
   {
-    label: "Home",
-    href: "home",
+    title: "Home",
+    link: "home",
   },
   {
-    label: "About",
-    href: "about",
+    title: "About",
+    link: "about",
   },
   {
-    label: "Product",
-    href: [
+    title: "Product",
+    link: "#",
+    submenu: [
       {
-        text: "Product Items",
+        title: "Product Items",
         link: "product-items",
       },
       {
-        text: "About Product",
+        title: "About Product",
         link: "about-product",
       },
       {
-        text: "New Product",
+        title: "New Product",
         link: "new-product",
       },
     ],
   },
   {
-    label: "Shop",
-    href: "shop",
+    title: "Shop",
+    link: "shop",
   },
   {
-    label: "Contact Us",
-    href: "contact-us",
+    title: "Contact Us",
+    link: "contact-us",
   },
 ];
 

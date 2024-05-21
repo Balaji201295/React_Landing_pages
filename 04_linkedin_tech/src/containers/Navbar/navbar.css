@@ -1,0 +1,210 @@
+.tech__navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.tech__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.tech__navbar-logo img {
+  width: 106px;
+  height: 25px;
+}
+.tech__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.tech__navbar-links li,
+.tech__navbar-smallscreen_links li {
+  cursor: pointer;
+  position: relative;
+}
+.tech__navbar-links li a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.tech__navbar-links li a:hover {
+  color: var(--color-lightRed);
+}
+.dropdown-menu {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  background-color: var(--color-harp);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-bottom: 12px solid var(--color-harp);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu li {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.no-rotate {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.tech__navbar-icons,
+.tech__navbar-smallscreen_icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech__navbar-icons li,
+.tech__navbar-smallscreen_icons li {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.tech__navbar-icons li span,
+.tech__navbar-smallscreen_icons li span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-white);
+  background: var(--color-red);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.tech__navbar-icons li:last-child,
+.tech__navbar-smallscreen_icons li:last-child {
+  background: var(--color-harp);
+  border-radius: 50%;
+}
+
+/* responsive navbar */
+.tech__navbar-smallscreen {
+  display: none;
+}
+.tech__navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-red);
+  transition: var(--transitionEase);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5;
+}
+.tech__navbar-smallscreen_overlay .overlay__close {
+  font-size: 24px;
+  color: var(--color-white);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.tech__navbar-smallscreen_links li {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem;
+  cursor: pointer;
+  transition: var(--transitionEase);
+}
+.tech__navbar-smallscreen_links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech__navbar-smallscreen .dropdown-menu {
+  top: 100%;
+}
+.tech__navbar-smallscreen .dropdown-menu li {
+  margin: 1rem;
+  padding: 0;
+  font-size: 1rem;
+  color: var(--color-red);
+}
+.tech__navbar-smallscreen_icons {
+  display: none;
+}
+
+@media screen and (min-width: 2000px) {
+  .tech__navbar-logo img {
+    width: 240px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tech__navbar-links {
+    display: none;
+  }
+  .tech__navbar-smallscreen {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech__navbar {
+    padding: 1rem 2rem;
+  }
+  .tech__navbar-icons {
+    display: none;
+  }
+  .tech__navbar-smallscreen_icons {
+    display: flex;
+    background: var(--color-harp);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  .app__navbar-logo img {
+    width: 110px;
+  }
+}
