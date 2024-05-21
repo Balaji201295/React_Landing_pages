@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-dark: #030d15;
+  --color-blue: #247cc0;
+  --color-red: #c72535;
+  --color-grey: rgba(3, 13, 21, 0.5);
+  --color-lightRed: rgba(199, 37, 53, 0.5);
+  --color-harp: #e6edf2;
+  --transitionAll: all 0.3s linear;
+  --transitionEase: 0.5s ease;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button,
+input {
+  border: unset;
+  outline: unset;
+}
+button {
+  cursor: pointer;
+}
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
