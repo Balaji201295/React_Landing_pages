@@ -1,10 +1,18 @@
 .section__padding {
   padding: 4rem 6rem;
 }
+.section__margin {
+  margin: 4rem 6rem;
+}
 
 .flex__center {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.flex__start {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -12,8 +20,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 100vh;
 }
 
 .app__wrapper_info {
@@ -84,7 +90,16 @@
   line-height: 1.5;
   color: var(--color-grey);
 }
-
+.p__price {
+  color: var(--color-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+.retail__price {
+  color: var(--color-grey);
+  text-decoration: line-through;
+}
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__subtitle {
@@ -112,21 +127,23 @@
   .app__wrapper_img-reverse {
     margin: 0 0 5rem 0;
   }
-
-  .app__wrapper_img img {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 992px) {
   .section__padding {
     padding: 4rem;
   }
+  .section__margin {
+    margin: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .section__padding {
     padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
   }
 
   .p__content,
@@ -145,5 +162,8 @@
   }
   .h2__headtext {
     font-size: 1.75rem;
+  }
+  .app__wrapper_img img {
+    width: 100%;
   }
 }

@@ -1,0 +1,11 @@
+.tech__newProducts-heading {
+  flex-direction: column;
+  text-align: center;
+}
+.tech__newProducts-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 5rem;
+}

@@ -14,29 +14,10 @@
 }
 .tech__header-btn {
   margin-top: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 2rem;
 }
 .tech__header-price {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 1rem;
-}
-.tech__header-price p:first-child {
-  color: var(--color-dark);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.25;
-}
-.tech__header-price p:last-child {
-  color: var(--color-grey);
-  text-decoration: line-through;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.25;
 }
 
 @media screen and (max-width: 768px) {
@@ -46,5 +27,11 @@
   }
   .tech__header-btn {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tech__header h1 {
+    font-size: 28px;
+    line-height: 40px;
   }
 }

@@ -1,0 +1,18 @@
+.tech__filter {
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 1rem 0;
+}
+.tech__filter-btn {
+  min-width: 120px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--color-grey);
+  background: transparent;
+  transition: var(--transitionAll);
+}
+.tech__filter-btn.selected-category {
+  color: var(--color-red);
+}

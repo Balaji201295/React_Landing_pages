@@ -5,11 +5,6 @@
   align-items: center;
   padding: 2rem 6rem;
 }
-.tech__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
 .tech__navbar-logo img {
   width: 106px;
   height: 25px;
