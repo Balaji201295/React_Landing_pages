@@ -1,0 +1,6 @@
+@media (max-width: 1024px) {
+  .tech__sectionHeading.centerText {
+    text-align: center;
+    width: 100%;
+  }
+}

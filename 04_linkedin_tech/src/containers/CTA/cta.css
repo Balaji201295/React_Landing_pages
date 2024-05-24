@@ -1,0 +1,49 @@
+.tech__cta {
+  background: var(--color-harp);
+  gap: 2rem;
+}
+.tech__cta-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.tech__cta-content p {
+  width: 100%;
+  max-width: 450px;
+}
+.tech__cta-form {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech__cta-form input {
+  width: 100%;
+  max-width: 350px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-white);
+  padding: 1rem 1.5rem;
+  color: var(--color-grey);
+}
+.tech__cta-form button {
+  height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .tech__cta {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech__cta-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

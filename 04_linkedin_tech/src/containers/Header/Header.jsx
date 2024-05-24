@@ -3,7 +3,7 @@ import { Image_1 } from "../../assets";
 import { SectionHeading } from "../../components";
 import "./header.css";
 const Header = () => (
-  <header className="tech__header app__wrapper section__padding" id="home">
+  <header className="tech__header app__wrapper section__padding" id="about">
     <div className="app__wrapper_info">
       <SectionHeading subtitle="Favorite brands" />
       <h1>

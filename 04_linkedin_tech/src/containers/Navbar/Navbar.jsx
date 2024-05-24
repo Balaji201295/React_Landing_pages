@@ -73,7 +73,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="tech__navbar">
+    <nav className="tech__navbar" id="home">
       {/* logo */}
       <a href="/" className="tech__navbar-logo flex__start">
         <img src={Logo} alt="LinkedInTech" />

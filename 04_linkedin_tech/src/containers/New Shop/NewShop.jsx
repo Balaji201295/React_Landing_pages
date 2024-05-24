@@ -2,7 +2,7 @@ import React from "react";
 import { SectionHeading, ShopImages } from "../../components";
 import "./newShop.css";
 const NewShop = () => (
-  <article className="tech__shop flex__center section__padding">
+  <article className="tech__shop flex__center section__padding" id="shop">
     <SectionHeading
       title="An enormous storehouse of facts"
       subtitle="New shop"
