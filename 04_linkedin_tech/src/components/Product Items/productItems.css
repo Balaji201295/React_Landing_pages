@@ -1,6 +1,12 @@
 .productItem {
   position: relative;
+  width: 100%;
   min-width: 360px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   background: #fff;
   padding: 2rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -90,4 +96,20 @@
 }
 .productItem:hover .productItem__options {
   transform: translateY(0);
+}
+
+@media screen and (max-width: 1199px) {
+  .productItem {
+    padding: 1.25rem;
+    min-width: 100%;
+  }
+  .productItem__img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .productItem {
+    padding: 1rem;
+  }
 }

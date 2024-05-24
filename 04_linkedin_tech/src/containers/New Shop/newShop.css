@@ -1,0 +1,9 @@
+.tech__shop {
+  flex-direction: column;
+  text-align: center;
+}
+.tech__shop p {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}

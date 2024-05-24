@@ -24,9 +24,9 @@ const ProductItems = ({
     <div className="productItem__info">
       <h3>{productName}</h3>
       <div className="productItem_price flex__start">
-        <p className="p__price">{`$ ${offerPrice}`}</p>
+        <p className="p__price">${offerPrice}</p>
         <p style={{ padding: "0 4px", color: "rgba(3,13,21,0.5)" }}>/</p>
-        <p className="p__price retail__price">{`$ ${retailPrice}`}</p>
+        <p className="p__price retail__price">${retailPrice}</p>
       </div>
       <Rating ratings={ratings} />
     </div>
@@ -40,9 +40,9 @@ const ProductItems = ({
       <div className="productItem__options-info">
         <div className="productItem__options-info_prices">
           <div className="productItem_price flex__start">
-            <p className="p__price">{`$ ${offerPrice}`}</p>
+            <p className="p__price">${offerPrice}</p>
             <p style={{ padding: "0 4px", color: "rgba(3,13,21,0.5)" }}>/</p>
-            <p className="p__price retail__price">{`$ ${retailPrice}`}</p>
+            <p className="p__price retail__price">${retailPrice}</p>
           </div>
           <Rating ratings={ratings} />
         </div>
@@ -55,4 +55,5 @@ const ProductItems = ({
     </div>
   </div>
 );
+
 export default ProductItems;

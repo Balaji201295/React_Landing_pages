@@ -81,6 +81,7 @@ export const brands = [
 
 export const products = [
   {
+    id: 1,
     category: "recent arrival",
     imgUrl: Product_1,
     productName: "Boss Speaker",
@@ -93,6 +94,7 @@ export const products = [
     colors: ["red", "green", "blue"],
   },
   {
+    id: 2,
     category: "best seller",
     imgUrl: Product_2,
     productName: "Sony Headphone",
@@ -105,6 +107,7 @@ export const products = [
     colors: ["yellow", "orange", "black"],
   },
   {
+    id: 3,
     category: "special offers",
     imgUrl: Product_3,
     productName: "DJI Drone",
@@ -117,6 +120,7 @@ export const products = [
     colors: ["pink", "purple", "skyblue"],
   },
   {
+    id: 4,
     category: "featured in",
     imgUrl: Product_4,
     productName: "DSLR Camera",
@@ -129,6 +133,7 @@ export const products = [
     colors: ["brown", "beige", "lightgreen"],
   },
   {
+    id: 5,
     category: "recent arrival",
     imgUrl: Product_5,
     productName: "Apple Mouse",
@@ -141,6 +146,7 @@ export const products = [
     colors: ["maroon", "lime", "wheat"],
   },
   {
+    id: 6,
     category: "special offers",
     imgUrl: Product_6,
     productName: "IOS Keyboard",
@@ -153,6 +159,7 @@ export const products = [
     colors: ["golden", "salmon", "chocolate"],
   },
   {
+    id: 7,
     category: "featured in",
     imgUrl: Product_7,
     productName: "Macbook pro",
@@ -165,6 +172,7 @@ export const products = [
     colors: ["bronze", "darkblue", "silver"],
   },
   {
+    id: 8,
     category: "special offers",
     imgUrl: Product_8,
     productName: "Portable Speaker",
@@ -177,6 +185,7 @@ export const products = [
     colors: ["turquoise", "aqua", "crimson"],
   },
   {
+    id: 9,
     category: "best seller",
     imgUrl: Product_9,
     productName: "SkullCandy Speaker",
@@ -189,6 +198,7 @@ export const products = [
     colors: ["orchid", "teal", "barbie"],
   },
   {
+    id: 10,
     category: "special offers",
     imgUrl: Product_10,
     productName: "DJI Drone Pro",
@@ -201,6 +211,7 @@ export const products = [
     colors: ["cherry", "berry", "sky"],
   },
   {
+    id: 11,
     category: "best seller",
     imgUrl: Product_11,
     productName: "Iphone",
@@ -213,6 +224,7 @@ export const products = [
     colors: ["crystal", "grass", "pear"],
   },
   {
+    id: 12,
     category: "featured in",
     imgUrl: Product_12,
     productName: "Apple Tab",
@@ -225,6 +237,7 @@ export const products = [
     colors: ["tan", "cement", "tree"],
   },
   {
+    id: 13,
     category: "recent arrival",
     imgUrl: Product_13,
     productName: "Bolt Speaker",
@@ -237,6 +250,7 @@ export const products = [
     colors: ["fuschia", "clay", "robin"],
   },
   {
+    id: 14,
     category: "recent arrival",
     imgUrl: Product_14,
     productName: "Macbook Pro 2",
@@ -250,6 +264,7 @@ export const products = [
   },
 
   {
+    id: 15,
     category: "best seller",
     imgUrl: Product_2,
     productName: "Headphone",
