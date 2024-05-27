@@ -38,7 +38,6 @@ export const navItems = [
   },
   {
     title: "Product",
-    link: "#",
     submenu: [
       {
         title: "Product Items",

@@ -13,7 +13,7 @@ const NavbarDropdown = ({ item, index, dropdownOpen, toggleDropdown }) => (
     onMouseEnter={() => item.submenu && toggleDropdown(index)}
     onMouseLeave={() => item.submenu && toggleDropdown(null)}
   >
-    <a href={`#${item.link || ""}`}>
+    <a href={`#${item.link || " "}`}>
       {item.title}
       {item.submenu && (
         <TiArrowSortedDown
