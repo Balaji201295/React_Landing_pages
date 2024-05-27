@@ -88,7 +88,7 @@ export const fruitsCards = [
   {
     imgUrl: Fruit_7,
     fruitName: "Cherries",
-    rating: 4.5,
+    ratings: 4.5,
     price: 55,
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ",
@@ -96,7 +96,7 @@ export const fruitsCards = [
   {
     imgUrl: Fruit_8,
     fruitName: "Amalaki",
-    rating: 4,
+    ratings: 4,
     price: 15,
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ",
@@ -104,7 +104,7 @@ export const fruitsCards = [
   {
     imgUrl: Fruit_9,
     fruitName: "Amalaki",
-    rating: 5,
+    ratings: 5,
     price: 25,
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ",
@@ -116,7 +116,7 @@ export const footerLinks = [
     links: [
       {
         label: "About Us",
-        href: "about-us",
+        href: "about",
       },
       {
         label: "FAQ",
@@ -149,15 +149,20 @@ export const footerLinks = [
 
 export const socialLinks = [
   {
-    icon: FiFacebook,
-    href: "https://www.facebook.com",
-  },
-  {
-    icon: FiInstagram,
-    href: "https://www.instagram.com",
-  },
-  {
-    icon: FiTwitter,
-    href: "https://www.x.com",
+    title: "Socials",
+    links: [
+      {
+        icon: FiFacebook,
+        href: "https://www.facebook.com",
+      },
+      {
+        icon: FiInstagram,
+        href: "https://www.instagram.com",
+      },
+      {
+        icon: FiTwitter,
+        href: "https://www.x.com",
+      },
+    ],
   },
 ];

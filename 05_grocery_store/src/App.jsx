@@ -17,6 +17,7 @@ const App = () => (
     <Fruits />
     <FruitsCards />
     <CTA />
+    <div className="section__line" />
     <Footer />
   </div>
 );

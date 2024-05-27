@@ -1,0 +1,46 @@
+.grocery__fruitCards {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  text-align: center;
+}
+.grocery__fruitCards-item {
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 280px;
+  max-width: 340px;
+  padding: 2rem 3rem;
+  background: var(--color-white);
+  border-radius: 30px;
+  box-shadow: 0px 10px 20px 0px rgba(22, 52, 7, 0.1);
+  cursor: pointer;
+}
+.grocery__fruitCards-item h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+.fruit__price {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-green);
+}
+.grocery__fruitCards-item .btn {
+  margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 991px) {
+  .grocery__fruitCards-item {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .grocery__fruitCards-item {
+    padding: 2rem;
+    min-width: 100%;
+    max-width: 100%;
+  }
+}

@@ -74,6 +74,16 @@
   line-height: 1.5;
   color: var(--color-grey);
 }
+.section__line {
+  height: 1px;
+  opacity: 0.4;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0) 0%,
+    #59be29 47.4%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
 @media screen and (min-width: 2000px) {
   .btn,
   .p__subtitle {
