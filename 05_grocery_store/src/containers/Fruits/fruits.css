@@ -1,0 +1,171 @@
+.grocery__fruits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.grocery__fruits-content .section__heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.grocery__fruits-content .section__heading :is(h2, p) {
+  width: 100%;
+  max-width: 500px;
+}
+
+.grocery__fruits-points {
+  flex: 0.75;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.grocery__fruits-item {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  min-width: 200px;
+}
+
+.grocery__fruits-item > p {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-green);
+  width: 4rem;
+  height: 4rem;
+  padding: 0.7rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(22, 52, 7, 0.05);
+}
+.grocery__fruits-item_content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+.grocery__fruits-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.grocery__fruits-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+}
+
+.grocery__fruits-container_img {
+  position: relative;
+}
+
+.grocery__fruits-container_img img {
+  width: 100%;
+  border: 1px solid rgba(10, 25, 2, 0.1);
+}
+
+/* Specific border adjustments based on the position */
+.grocery__fruits-container_img:nth-child(1) img {
+  border-left: none;
+  border-top: none;
+}
+
+.grocery__fruits-container_img:nth-child(2) img {
+  border-top: none;
+}
+
+.grocery__fruits-container_img:nth-child(3) img {
+  border-top: none;
+  border-right: none;
+}
+
+.grocery__fruits-container_img:nth-child(4) img {
+  border-left: none;
+  border-bottom: none;
+}
+
+.grocery__fruits-container_img:nth-child(5) img {
+  border-bottom: none;
+}
+
+.grocery__fruits-container_img:nth-child(6) img {
+  border-bottom: none;
+  border-right: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .grocery__fruits-content {
+    flex-direction: column;
+  }
+  .grocery__fruits-content .section__heading :is(h2, p) {
+    max-width: 100%;
+  }
+  .grocery__fruits-points {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 768px) {
+  .grocery__fruits-item > p {
+    font-size: 1.5rem;
+  }
+  .grocery__fruits-item_content p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .grocery__fruits-points {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .grocery__fruits-item > p {
+    font-size: 1.25rem;
+  }
+  .grocery__fruits-item_content p {
+    font-size: 14px;
+  }
+  .grocery__fruits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Specific border adjustments based on the position */
+  .grocery__fruits-container_img:nth-child(1) img {
+    border-left: none;
+    border-top: none;
+  }
+
+  .grocery__fruits-container_img:nth-child(2) img {
+    border-top: none;
+    border-right: none;
+  }
+
+  .grocery__fruits-container_img:nth-child(3) img {
+    border-left: none;
+    border-right: 1px solid rgba(10, 25, 2, 0.1);
+  }
+
+  .grocery__fruits-container_img:nth-child(4) img {
+    border-right: none;
+    border-left: 1px solid rgba(10, 25, 2, 0.1);
+  }
+
+  .grocery__fruits-container_img:nth-child(5) img {
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .grocery__fruits-container_img:nth-child(6) img {
+    border-bottom: none;
+    border-right: none;
+  }
+}

@@ -1,0 +1,82 @@
+.grocery__header h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-dark);
+}
+.grocery__header h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-green);
+  margin-bottom: 1.5rem;
+}
+.grocery__header-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.grocery__header-btn button:last-child {
+  background: var(--color-white);
+  color: var(--color-green);
+}
+.grocery__header-btn button:last-child:hover {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+.grocery__header .app__wrapper_img {
+  position: relative;
+  z-index: 0;
+}
+.grocery__header .app__wrapper_img::after {
+  content: "";
+  position: absolute;
+  bottom: 30%;
+  left: 12%;
+  width: 169px;
+  height: 103px;
+  background: url("../../assets/ant_1.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.grocery__header .app__wrapper_img::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: 8%;
+  width: 119px;
+  height: 83px;
+  background: url("../../assets/ant_2.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .grocery__header h5 {
+    font-size: 1.25rem;
+  }
+  .grocery__header h1 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grocery__header .app__wrapper_img::after,
+  .grocery__header .app__wrapper_img::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .grocery__header h5 {
+    font-size: 1rem;
+  }
+  .grocery__header h1 {
+    font-size: 3.5rem;
+  }
+  .grocery__header-btn {
+    flex-direction: column;
+  }
+}

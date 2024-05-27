@@ -1,0 +1,144 @@
+.section__padding {
+  padding: 4rem 6rem;
+}
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex__start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app__wrapper_info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.app__wrapper_img {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 2rem;
+}
+
+.app__wrapper_img-reverse {
+  justify-content: flex-start;
+  margin-right: 2rem;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 20px 80px;
+  padding: 0.75rem 2.5rem;
+  transition: var(--transitionLinear);
+  background: var(--color-green);
+  color: var(--color-white);
+  box-shadow: 0px 10px 20px 0px rgba(22, 52, 7, 0.1);
+}
+
+.btn:hover {
+  color: var(--color-green);
+  background: var(--color-white);
+}
+.h2__headtext {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--color-dark);
+}
+.p__content {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-grey);
+}
+@media screen and (min-width: 2000px) {
+  .btn,
+  .p__subtitle {
+    font-size: 1.5rem;
+  }
+
+  .p__content {
+    font-size: 1.25rem;
+  }
+
+  .h2__headtext {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .app__wrapper {
+    flex-direction: column;
+  }
+
+  .app__wrapper_img {
+    margin: 5rem 0 0 0;
+  }
+
+  .app__wrapper_img-reverse {
+    margin: 0 0 5rem 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section__padding {
+    padding: 4rem;
+  }
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+
+  .p__content,
+  .p__subtitle {
+    font-size: 14px;
+  }
+  .h2__headtext {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .p__content,
+  .p__subtitle,
+  .btn {
+    font-size: 12px;
+  }
+  .h2__headtext {
+    font-size: 1.75rem;
+  }
+  .app__wrapper_img img {
+    width: 100%;
+  }
+}

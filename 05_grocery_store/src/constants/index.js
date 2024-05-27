@@ -13,12 +13,12 @@ import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 export const navItems = [
   {
-    title: "About Us",
-    link: "about-us",
+    title: "Home",
+    link: "home",
   },
   {
     title: "Healthy Snack",
-    link: "Healthy-snack",
+    link: "healthy-snack",
   },
   {
     title: "Order Fruit",
@@ -53,7 +53,7 @@ export const stats = [
   },
 ];
 
-export const order = [
+export const orders = [
   {
     title: "Order Your Fruit",
     content: "A serve of fruit is about one medium piece",

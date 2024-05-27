@@ -1,6 +1,4 @@
 import React from "react";
 import "./button.css";
-const Button = () => {
-  return <div>Button</div>;
-};
+const Button = ({ label }) => <button className="btn">{label}</button>;
 export default Button;
