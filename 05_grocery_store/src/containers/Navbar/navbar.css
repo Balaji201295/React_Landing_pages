@@ -113,6 +113,7 @@
   }
   .grocery__navbar-logo img {
     width: 100px;
+    height: auto;
   }
   .grocery__navbar-btn {
     display: none;
