@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={logo} alt="HooBank" className="w-[124px] h-[32px]" />
       </a>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
+        {navLinks.map((nav) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] text-white ${
