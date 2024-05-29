@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "../styles";
 const PeopleCards = ({ imgUrl, personName, age, content }) => (
-  <article className="flex flex-col py-8 px-6 min-w-full sm:min-w-[260px] relative z-[5] overflow-hidden">
-    <div className="absolute w-full h-[380px] bg-white left-0 bottom-0 -z-[1] rounded-lg" />
+  <article className="flex flex-col py-8 px-6 min-w-[260px] max-w-[280px] relative z-[5] overflow-hidden">
+    <div className="absolute w-full h-[80%] bg-white left-0 bottom-0 -z-[1] rounded-lg" />
     <img
       src={imgUrl}
       alt={personName}
