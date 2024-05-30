@@ -25,7 +25,7 @@ const Hero = () => {
     return () => {
       window.removeEventListener("mousedown", handleClickOutside);
     };
-  });
+  }, []);
 
   const handleOptionClick = (option) => {
     setSelectedOption(option);
@@ -45,7 +45,6 @@ const Hero = () => {
         <div className="flex justify-start items-center gap-4 w-full">
           <div className="relative inline-block text-left w-full min-w-[140px] max-w-[175px]">
             <button
-              ref={dropdownRef}
               onClick={() => setIsOpen((prev) => !prev)}
               className={`${styles.flexCenter} text-sm sm:text-base text-white font-medium bg-primary rounded-lg py-3 px-3 sm:px-6 border-2 w-full border-primary hover:bg-white hover:text-primary transition-all shadow-sm`}
             >
@@ -56,7 +55,10 @@ const Hero = () => {
               />
             </button>
             {isOpen && (
-              <div className="origin-top-right absolute right-0 w-full mt-2 bg-white border-2 border-primary z-10 rounded-md shadow-sm">
+              <div
+                ref={dropdownRef}
+                className="origin-top-right absolute right-0 w-full mt-2 bg-white border-2 border-primary z-10 rounded-md shadow-sm"
+              >
                 {options.map((option, index) => (
                   <div
                     key={index}
