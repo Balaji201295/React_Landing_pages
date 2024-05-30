@@ -1,0 +1,12 @@
+export { default as AlwaysOnline } from "./AlwaysOnline";
+export { default as Brands } from "./Brands";
+export { default as Chart } from "./Chart";
+export { default as Demo } from "./Demo";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as Navbar } from "./Navbar";
+export { default as Pricing } from "./Pricing";
+export { default as Products } from "./Products";
+export { default as SaveCost } from "./SaveCost";
+export { default as Testimonials } from "./Testimonials";
+export { default as UseAnytime } from "./UseAnytime";
