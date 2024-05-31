@@ -8,7 +8,7 @@ const Footer = () => (
     id="contact"
     className={`${styles.flexCenter} ${styles.marginY} flex-col w-full`}
   >
-    <div className="w-full flex flex-col sm:flex-row flex-wrap justify-between items-start gap-12 py-6">
+    <div className="w-full flex flex-col sm:flex-row flex-wrap justify-between items-start gap-6 py-6">
       <div className="flex-1 flex flex-col justify-start items-start gap-6 xs:min-w-[280px] ss:max-w-[350px]">
         <a
           href="/"
@@ -73,7 +73,7 @@ const Footer = () => (
         </p>
       </div>
     </div>
-    <div className="w-full flex justify-between items-center gap-6 py-6 border-t border-[#BDBDBD]/20">
+    <div className="w-full flex flex-col flex-wrap sm:flex-row justify-between items-center gap-6 py-6 border-t border-[#BDBDBD]/20">
       <div className="flex justify-start items-center gap-6">
         <a
           href="#"
