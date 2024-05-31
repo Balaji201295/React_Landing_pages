@@ -63,3 +63,51 @@ body {
 .pricing__card {
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.04);
 }
+
+/* slick carousel */
+.slick-slider {
+  margin-top: 5rem;
+}
+.slick-list {
+  overflow: visible;
+}
+/* slick-custom.css */
+.slick-dots {
+  bottom: -4rem;
+}
+.slick-dots li button {
+  font-size: 12px;
+  border: 1px solid #292830;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+}
+.slick-dots li button:before {
+  content: "";
+}
+
+.slick-dots li.slick-active button {
+  background: #292830;
+}
+
+.slick-dots li button {
+  background: transparent;
+}
+
+/* feedback-card */
+.slick-slide > div {
+  margin: 0 0.5rem;
+}
+.feedback__card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.feedback__card-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

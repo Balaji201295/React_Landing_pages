@@ -52,7 +52,15 @@ const App = () => (
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Testimonials />
+      </div>
+    </div>
+    <div className={`${styles.padding} bg-[#FF7235]`}>
+      <div className={`${styles.boxWidth}`}>
         <Demo />
+      </div>
+    </div>
+    <div className={`${styles.paddingX}`}>
+      <div className={`${styles.boxWidth}`}>
         <Footer />
       </div>
     </div>

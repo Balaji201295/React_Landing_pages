@@ -39,7 +39,7 @@ export const navLinks = [
   },
   {
     id: "contact",
-    title: "contact",
+    title: "Contact",
   },
 ];
 
@@ -133,7 +133,7 @@ export const plans = [
   },
 ];
 
-export const testimonials = [
+export const feedback = [
   {
     profileImg: Profile,
     profileName: "Cameron Williamson",
@@ -177,27 +177,27 @@ export const footerLinks = [
     links: [
       {
         name: "Home",
-        link: "home",
+        id: "home",
       },
       {
         name: "About",
-        link: "about",
+        id: "about",
       },
       {
         name: "Careers",
-        link: "careers",
+        id: "careers",
       },
       {
         name: "Pricing",
-        link: "pricing",
+        id: "pricing",
       },
       {
         name: "Features",
-        link: "features",
+        id: "features",
       },
       {
         name: "Blog",
-        link: "blog",
+        id: "blog",
       },
     ],
   },
@@ -206,19 +206,19 @@ export const footerLinks = [
     links: [
       {
         name: "Terms of Use",
-        link: "#",
+        id: "#",
       },
       {
         name: "Terms of Conditions",
-        link: "#",
+        id: "#",
       },
       {
         name: "Privacy Policy",
-        link: "#",
+        id: "#",
       },
       {
         name: "Cookie Policy",
-        link: "#",
+        id: "#",
       },
     ],
   },
