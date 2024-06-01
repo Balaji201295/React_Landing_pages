@@ -1,0 +1,13 @@
+export { default as Blogs } from "./Blogs";
+export { default as Brands } from "./Brands";
+export { default as Collaborate } from "./Collaborate";
+export { default as Contracts } from "./Contracts";
+export { default as Demo } from "./Demo";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as Integrations } from "./Integrations";
+export { default as MoreOneFlow } from "./MoreOneFlow";
+export { default as Navbar } from "./Navbar";
+export { default as Platforms } from "./Platforms";
+export { default as Testimonials } from "./Testimonials";
+export { default as Video } from "./Video";
