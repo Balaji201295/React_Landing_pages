@@ -19,6 +19,7 @@ const Navbar = () => {
 
   return (
     <nav
+      id="home"
       className={`${styles.boxWidth} ${
         styles.paddingX
       } w-full fixed top-0 left-0 right-0 z-[1000] flex justify-between items-center transition-all duration-500 ease-in-out ${
@@ -79,7 +80,10 @@ const Navbar = () => {
             toggleOpen ? "flex" : "hidden"
           } flex-col gap-4 absolute top-20 right-4 sm:right-12 bg-primary mx-4 my-2 p-5 min-w-[175px] rounded-lg sidebar`}
         >
-          <ul className="flex flex-col justify-center xs:justify-end items-center xs:items-end gap-4 list-none">
+          <ul
+            className="flex flex-col justify-center xs:justify-end items-center xs:items-end gap-4 list-none"
+            onClick={() => setToggleOpen(false)}
+          >
             {navLinks.map((nav) => (
               <li
                 key={nav.id}

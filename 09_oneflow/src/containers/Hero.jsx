@@ -3,7 +3,7 @@ import { Button } from "../components";
 import styles from "../styles";
 const Hero = () => (
   <header
-    id="home"
+    id="about-us"
     className={`bg__header ${styles.padding} ${styles.boxWidth} flex justify-start items-center min-h-screen mt-20`}
   >
     <div className={`${styles.flexStart} flex-col gap-6`}>

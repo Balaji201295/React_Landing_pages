@@ -4,6 +4,7 @@ import { Button } from "../components";
 import { Image_2 } from "../assets";
 const Contracts = () => (
   <section
+    id="learn"
     className={`${styles.boxWidth} ${styles.padding} ${layout.section} bg-primary`}
   >
     <div className={`${layout.sectionInfo} gap-6`}>

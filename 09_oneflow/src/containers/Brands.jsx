@@ -2,7 +2,10 @@ import React from "react";
 import { brands } from "../constants";
 import styles from "../styles";
 const Brands = () => (
-  <section className={`${styles.padding} ${styles.boxWidth} bg-primary`}>
+  <section
+    id="partners"
+    className={`${styles.padding} ${styles.boxWidth} bg-primary`}
+  >
     <h2 className="text-2xl font-normal text-white tracking-[0.7px] text-center font-roboto mb-6">
       Join these companies making business flow
     </h2>

@@ -13,6 +13,9 @@ body {
   font-size: 1rem;
   line-height: 1.5;
 }
+li {
+  list-style: none;
+}
 .sidebar {
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -54,4 +57,41 @@ body {
   to {
     transform: translateX(0%);
   }
+}
+
+.bg__platform {
+  background: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg__demo {
+  background: url("./assets/image_4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* slick carousel */
+.feedback {
+}
+
+.slick-list {
+  overflow: visible;
+}
+/* slick-custom.css */
+.slick-arrow,
+.slick-dots {
+  display: none !important;
+}
+/* feedback-card */
+.slick-slide > div {
+  margin: 0 0.5rem;
+}
+.feedback__card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
